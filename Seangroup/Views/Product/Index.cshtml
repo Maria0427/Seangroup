@@ -1,0 +1,262 @@
+﻿@model List<Product>
+
+@{
+    ViewData["Title"] = "Каталог товаров";
+}
+
+
+<h2 class="mb-4">Каталог товаров</h2>
+
+<!-- Поисковая форма -->
+<div class="row mb-4">
+    <div class="col-md-8">
+        <form asp-action="Index" method="get" class="input-group shadow rounded">
+            <input type="text"
+                   name="search"
+                   value="@ViewData["CurrentFilter"]"
+                   class="form-control"
+                   placeholder="Поиск по названию или описанию..."
+                   id="searchInput">
+            <button type="submit" class="btn btn-primary">
+                <i class="bi bi-search"></i>
+            </button>
+            <a href="@Url.Action("Index")" class="btn btn-outline-secondary">
+                <i class="bi bi-arrow-clockwise"></i>
+            </a>
+        </form>
+    </div>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-warning">По вашему запросу ничего не найдено</div>
+}
+else
+{
+    <div class="row" id="productsContainer">
+        @* Карточка добавления — отображается один раз в нач *@
+        @if (User.IsInRole("Admin"))
+        {
+            <div class="col-md-4 mb-4 d-flex">
+                <a href="@Url.Action("Create", "Product")" class="w-100 text-decoration-none text-dark">
+                    <div class="card h-100 w-100 border-2 border-dashed shadow-sm d-flex align-items-center justify-content-center" style="min-height: 400px;">
+                        <div class="text-center">
+                            <i class="bi bi-plus-circle" style="font-size: 3rem;"></i>
+                            <p class="mt-2 mb-0">Добавить товар</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4 mb-4 d-flex">
+                <div class="card h-100 w-100 shadow-sm position-relative">
+                    <!-- Основная кликабельная область -->
+                    <a asp-action="Details" asp-route-id="@product.Id"
+                       class="stretched-link card-clickable-area"
+                       style="text-decoration: none; color: inherit;"></a>
+
+                    <div class="card-img-wrapper" style="height: 250px;">
+                        <img src="@product.ImageUrl"
+                             class="card-img-top h-100 object-fit-cover"
+                             alt="@product.Name"
+                             onerror="this.src='/images/placeholder.jpg'">
+                    </div>
+
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title" style="min-height: 48px;">@product.Name</h5>
+                        <p class="card-text fs-5 text-danger mb-3">@product.Price.ToString("N0") руб.</p>
+
+                        <div class="mt-auto">
+                            <!-- Кнопка "Подробнее" для модального окна -->
+                            <button class="btn btn-outline-primary w-100 mb-2"
+                                    onclick="event.stopPropagation(); showProductDetails(@product.Id)">
+                                <i class="bi bi-info-circle"></i> Подробнее
+                            </button>
+
+                            <!-- Форма добавления в корзину -->
+                            <form asp-controller="Cart" asp-action="Add" method="post"
+                                  onclick="event.stopPropagation()">
+                                <div class="input-group">
+                                    <input type="hidden" name="productId" value="@product.Id" />
+                                    <input type="number"
+                                           name="quantity"
+                                           value="1"
+                                           min="1"
+                                           class="form-control"
+                                           style="width: 70px">
+                                    <button type="submit" class="btn btn-success w-100">
+                                        <i class="bi bi-cart-plus"></i> В корзину
+                                    </button>
+                                </div>
+                            </form>
+
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <div class="mt-2 d-flex justify-content-between"
+                                     onclick="event.stopPropagation()">
+                                    <a href="@Url.Action("Edit", "Product", new { id = product.Id })"
+                                       class="btn btn-warning btn-sm">
+                                        <i class="bi bi-pencil"></i> Изменить
+                                    </a>
+                                    <a href="@Url.Action("Delete", "Product", new { id = product.Id })"
+                                       class="btn btn-danger btn-sm">
+                                        <i class="bi bi-trash"></i> Удалить
+                                    </a>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+}
+
+<!-- Модальное окно -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productTitle"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img id="productImage" src="" class="img-fluid rounded mb-3">
+                    </div>
+                    <div class="col-md-6">
+                        <p id="productDescription" class="text-muted"></p>
+                        <p class="h4 text-danger mb-4"><strong id="productPrice"></strong> руб.</p>
+                        <h5>Характеристики:</h5>
+                        <ul id="productDetails" class="list-unstyled"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+ 
+    <script>
+        $(document).ready(function () {
+            $('#searchButton').on('click', function () {
+                const searchQuery = $('#searchInput').val();
+                if (searchQuery.length >= 3 || searchQuery.length === 0) {
+                    loadProducts(searchQuery);
+                }
+            });
+        });
+
+        function loadProducts(searchQuery) {
+            $.ajax({
+                url: '@Url.Action("SearchProducts")',
+                data: { search: searchQuery },
+                success: function (data) {
+                    $('#productsContainer').html(data);
+                },
+                error: function () {
+                    $('#productsContainer').html('<div class="alert alert-danger">Ошибка загрузки данных</div>');
+                }
+            });
+        }
+
+        function showProductDetails(productId) {
+            $.ajax({
+                url: '@Url.Action("GetProductDetails")/' + productId,
+                type: 'GET',
+                success: function (data) {
+                    $('#productTitle').text(data.name);
+                    $('#productDescription').text(data.description);
+                    $('#productPrice').text(data.price);
+                    $('#productImage').attr('src', data.imageUrl);
+
+                    let detailsList = $('#productDetails');
+                    detailsList.empty();
+                    data.details.forEach(detail => {
+                        detailsList.append(
+                            `<li class="mb-2">
+                                <strong>${detail.attributeName}:</strong>
+                                <span class="text-muted">${detail.attributeValue}</span>
+                            </li>`
+                        );
+                    });
+
+                    $('#productModal').modal('show');
+                },
+                error: function () {
+                    alert('Ошибка загрузки данных товара');
+                }
+            });
+        }
+    </script>
+
+
+
+
+}
+
+<style>
+    .card {
+        transition: transform 0.2s, box-shadow 0.2s;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+        }
+
+    .object-fit-cover {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .card-img-wrapper {
+        background: #f8f9fa;
+        border-bottom: 1px solid rgba(0,0,0,0.125);
+        overflow: hidden;
+    }
+
+    .modal-body img {
+        max-height: 500px;
+        object-fit: contain;
+    }
+
+    .border-dashed {
+        border: 2px dashed #ccc;
+    }
+
+    .card-clickable-area {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .card {
+        position: relative;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            cursor: pointer;
+        }
+
+    .btn, .input-group, .admin-buttons {
+        position: relative;
+        z-index: 2;
+    }
+</style>

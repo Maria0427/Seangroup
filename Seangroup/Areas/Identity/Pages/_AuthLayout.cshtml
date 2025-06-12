@@ -1,0 +1,138 @@
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row justify-content-center">
+    <div class="col-5 mt-5">
+        <div class="card login-logout-card">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Identity/Account/Login">
+                            Log In
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Identity/Account/Register">
+                            Register
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="row justify-content-center">
+                    <div class="col-10 my-4">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        $(function () {
+            const currentPage = location.pathname;
+            $('.nav-tabs li a').each(function () {
+                const $this = $(this);
+                if (currentPage.toLowerCase().indexOf($this.attr('href').toLowerCase()) !== -1) {
+                    $this.addClass('active');
+                }
+            })
+        })
+    </script>
+}
+<style>
+    /* НОВЫЕ СТИЛИ ДЛЯ ВКЛАДОК */
+    .login-logout-card .nav-tabs {
+        border-bottom: none !important;
+    }
+
+        .login-logout-card .nav-tabs .nav-link {
+            background-color: transparent;
+            border: none;
+            border-bottom: 3px solid transparent;
+            color: #495057;
+        }
+
+            .login-logout-card .nav-tabs .nav-link.active {
+                border-bottom: 3px solid #258cfb !important;
+                color: #258cfb !important;
+                background-color: transparent !important;
+                font-weight: bold;
+            }
+
+            .login-logout-card .nav-tabs .nav-link:hover:not(.active) {
+                border-bottom: 3px solid #dee2e6;
+            }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const currentPage = location.pathname.toLowerCase();
+        const navLinks = document.querySelectorAll('.nav-tabs .nav-link');
+
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href').toLowerCase();
+
+            // Определяем активную вкладку
+            if (currentPage.includes(href)) {
+                link.classList.add('active');
+            }
+
+            // Добавляем обработчик для ручного переключения
+            link.addEventListener('click', function(e) {
+                navLinks.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    });
+</script>
+<style>
+    /* НОВЫЕ СТИЛИ ДЛЯ ВКЛАДОК */
+    .login-logout-card .nav-tabs {
+        border-bottom: none !important;
+    }
+
+        .login-logout-card .nav-tabs .nav-link {
+            background-color: transparent;
+            border: none;
+            border-bottom: 3px solid transparent;
+            color: #495057;
+        }
+
+            .login-logout-card .nav-tabs .nav-link.active {
+                border-bottom: 3px solid #258cfb !important;
+                color: #258cfb !important;
+                background-color: transparent !important;
+                font-weight: bold;
+            }
+
+            .login-logout-card .nav-tabs .nav-link:hover:not(.active) {
+                border-bottom: 3px solid #dee2e6;
+            }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const currentPage = location.pathname.toLowerCase();
+        const navLinks = document.querySelectorAll('.nav-tabs .nav-link');
+
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href').toLowerCase();
+
+            // Определяем активную вкладку
+            if (currentPage.includes(href)) {
+                link.classList.add('active');
+            }
+
+            // Добавляем обработчик для ручного переключения
+            link.addEventListener('click', function(e) {
+                navLinks.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    });
+</script>

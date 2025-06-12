@@ -1,0 +1,49 @@
+﻿@model List<Seangroup.Models.Order>
+
+@{
+    ViewData["Title"] = "Мои заказы";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">История заказов</h2>
+
+    @if (Model.Count == 0)
+    {
+        <div class="alert alert-info">У вас пока нет заказов.</div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="table-light">
+                    <tr>
+                        <th>№ Заказа</th>
+                        <th>Дата</th>
+                        <th>Статус</th>
+                        <th>Способ получения</th>
+                        <th>Сумма</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var order in Model)
+                    {
+                        <tr>
+                            <td>@order.Id</td>
+                            <td>@order.OrderDate.ToString("dd.MM.yyyy HH:mm")</td>
+                            <td>@order.Status</td>
+                            <td>@order.DeliveryMethod</td>
+                            <td>@order.Total.ToString("C")</td>
+                            <td>
+                                <a href="@Url.Action("Success", "Order", new { id = order.Id })"
+                                   class="btn btn-sm btn-outline-primary">
+                                    Подробнее
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

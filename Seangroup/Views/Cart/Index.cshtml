@@ -1,0 +1,81 @@
+﻿@model IEnumerable<CartItem>
+
+<h2 class="mb-4">Ваша корзина</h2>
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead class="table-light">
+            <tr>
+                <th>Товар</th>
+                <th>Цена за шт.</th>
+                <th>Количество</th>
+                <th>Сумма</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            @if (!string.IsNullOrEmpty(item.Product.ImageUrl))
+                            {
+                                <img src="@item.Product.ImageUrl"
+                                     class="img-thumbnail me-3"
+                                     style="max-width: 80px"
+                                     alt="@item.Product.Name">
+                            }
+                            <h5>@item.Product.Name</h5>
+                        </div>
+                    </td>
+                    <td>@item.Price.ToString("C")</td>
+                    <td>
+                        <form asp-controller="Cart" asp-action="UpdateQuantity" method="post" class="d-flex">
+                            <input type="hidden" name="cartItemId" value="@item.Id" />
+                            <input type="number" name="quantity" value="@item.Quantity"
+                                   min="1" class="form-control form-control-sm" style="width: 70px" />
+                            <button type="submit" class="btn btn-sm btn-outline-secondary ms-2">
+                                <i class="bi bi-arrow-clockwise"></i>
+                            </button>
+                        </form>
+                    </td>
+                    <td>@((item.Quantity * item.Price).ToString("C"))</td>
+                    <td>
+                        <form asp-controller="Cart" asp-action="Remove" method="post">
+                            <input type="hidden" name="cartItemId" value="@item.Id" />
+                            <button type="submit" class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr class="table-active">
+                <td colspan="3" class="text-end fw-bold">Итого:</td>
+                <td class="fw-bold">@Model.Sum(i => i.Quantity * i.Price).ToString("C"))</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<div class="d-flex justify-content-between mt-4">
+    <a href="/" class="btn btn-outline-secondary">
+        <i class="bi bi-arrow-left"></i> Продолжить покупки
+    </a>
+    <a asp-controller="Order" asp-action="Checkout" class="btn btn-success">
+        Оформить заказ <i class="bi bi-chevron-right"></i>
+    </a>
+</div>
+
+<style>
+    .table-hover tbody tr:hover {
+        background-color: #f8f9fa;
+    }
+    .img-thumbnail {
+        object-fit: cover;
+    }
+</style>

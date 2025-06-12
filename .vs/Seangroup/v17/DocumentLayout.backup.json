@@ -1,0 +1,654 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\product\\_reviewspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\product\\_reviewspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\wwwroot\\css\\site-theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\wwwroot\\css\\site-theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\services\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\services\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\portfolio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\areas\\identity\\pages\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\areas\\identity\\pages\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\admin\\orderdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\admin\\orderdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\admin\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\admin\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\controllers\\paymentcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\controllers\\paymentcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\order\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\order\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\order\\userorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\order\\userorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\order\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\order\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\controllers\\successcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\controllers\\successcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\areas\\identity\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\areas\\identity\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\areas\\identity\\data\\seangroupdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\areas\\identity\\data\\seangroupdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\views\\order\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\views\\order\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|c:\\users\\masha\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\seangroup\\seangroup\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEDD99-0615-4B94-8716-32295CD16057}|Seangroup\\Seangroup.csproj|solutionrelative:seangroup\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ReviewsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Product\\_ReviewsPartial.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\Product\\_ReviewsPartial.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Product\\_ReviewsPartial.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\Product\\_ReviewsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T16:45:00.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Seangroup\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T13:19:44.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Seangroup\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAACcAAAAAhGZmZmb+vzMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T07:38:49.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\Product\\Details.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\Product\\Details.cshtml",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAqwK8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T13:08:33.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T15:10:45.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Seangroup\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAcwJ0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T13:09:52.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\About\\Index.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\About\\Index.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\About\\Index.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\About\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T15:20:41.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site-theme.css",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\wwwroot\\css\\site-theme.css",
+              "RelativeDocumentMoniker": "Seangroup\\wwwroot\\css\\site-theme.css",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\wwwroot\\css\\site-theme.css",
+              "RelativeToolTip": "Seangroup\\wwwroot\\css\\site-theme.css",
+              "ViewState": "AgIAACABAAAAAAAAAAAAADgBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-10T16:36:43.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_AuthLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Areas\\Identity\\Pages\\_AuthLayout.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Areas\\Identity\\Pages\\_AuthLayout.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Areas\\Identity\\Pages\\_AuthLayout.cshtml",
+              "RelativeToolTip": "Seangroup\\Areas\\Identity\\Pages\\_AuthLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T07:35:27.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAnwGwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T13:10:58.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Services\\Index.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\Services\\Index.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Services\\Index.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\Services\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T15:09:07.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Seangroup\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Seangroup\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAEIAAAAAbGZmZmYkwCIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-10T17:32:16.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Portfolio\\Index.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\Portfolio\\Index.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Portfolio\\Index.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\Portfolio\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T16:02:22.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Seangroup\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T07:39:01.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Models\\Review.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Models\\Review.cs",
+              "RelativeToolTip": "Seangroup\\Models\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T13:52:58.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Order\\Success.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\Order\\Success.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Order\\Success.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\Order\\Success.cshtml",
+              "ViewState": "AgIAACoAAAAAZmZmZmYkwDYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-02T16:39:52.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrderDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Admin\\OrderDetails.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\Admin\\OrderDetails.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Admin\\OrderDetails.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\Admin\\OrderDetails.cshtml",
+              "ViewState": "AgIAACEAAACAZ2ZmZmYUwDYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T15:41:35.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PortfolioController.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\PortfolioController.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Controllers\\PortfolioController.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\PortfolioController.cs",
+              "RelativeToolTip": "Seangroup\\Controllers\\PortfolioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T16:02:14.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Seangroup\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T17:19:24.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Orders.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Admin\\Orders.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\Admin\\Orders.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Admin\\Orders.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\Admin\\Orders.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-10T15:05:16.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Seangroup\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T14:44:29.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Seangroup\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T17:56:19.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Models\\Role.cs",
+              "RelativeToolTip": "Seangroup\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T14:44:42.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Order\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\Order\\Checkout.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Order\\Checkout.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\Order\\Checkout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-02T17:19:00.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PaymentController .cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\PaymentController .cs",
+              "RelativeDocumentMoniker": "Seangroup\\Controllers\\PaymentController .cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\PaymentController .cs",
+              "RelativeToolTip": "Seangroup\\Controllers\\PaymentController .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T16:33:12.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserOrders.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Order\\UserOrders.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\Order\\UserOrders.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Order\\UserOrders.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\Order\\UserOrders.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAYwCUAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-02T17:23:29.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Models\\OrderItem.cs",
+              "RelativeToolTip": "Seangroup\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T17:22:25.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Areas\\Identity\\Data\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Areas\\Identity\\Data\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Areas\\Identity\\Data\\ApplicationUser.cs",
+              "RelativeToolTip": "Seangroup\\Areas\\Identity\\Data\\ApplicationUser.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T14:26:02.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SuccessController.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\SuccessController.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Controllers\\SuccessController.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\SuccessController.cs",
+              "RelativeToolTip": "Seangroup\\Controllers\\SuccessController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T16:39:33.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Seangroup\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAABQAAAAANjMzMzMDwBkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T14:53:47.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SeangroupDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Areas\\Identity\\Data\\SeangroupDbContext.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Areas\\Identity\\Data\\SeangroupDbContext.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Areas\\Identity\\Data\\SeangroupDbContext.cs",
+              "RelativeToolTip": "Seangroup\\Areas\\Identity\\Data\\SeangroupDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T14:46:19.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Models\\User.cs",
+              "RelativeToolTip": "Seangroup\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T14:25:30.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Seangroup\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T13:16:08.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\appsettings.json",
+              "RelativeDocumentMoniker": "Seangroup\\appsettings.json",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\appsettings.json",
+              "RelativeToolTip": "Seangroup\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-02T10:50:29.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T07:37:43.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T07:37:07.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAADIAAACAd2ZmZmYUwGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T14:04:54.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Confirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Order\\Confirmation.cshtml",
+              "RelativeDocumentMoniker": "Seangroup\\Views\\Order\\Confirmation.cshtml",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Views\\Order\\Confirmation.cshtml",
+              "RelativeToolTip": "Seangroup\\Views\\Order\\Confirmation.cshtml",
+              "ViewState": "AgIAAAYAAACAZ2ZmZmYkwBkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-28T15:05:22.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Seangroup\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\masha\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0441\\Seangroup\\Seangroup\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Seangroup\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAAcAAABAOzMzMzMqwDoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T13:24:38.154Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

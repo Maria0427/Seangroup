@@ -1,0 +1,73 @@
+﻿@model Order
+
+<h2 class="text-center my-5">Оформление заказа</h2>
+
+<form asp-action="Checkout" method="post" class="container p-4 shadow-sm rounded-lg bg-light">
+    <div class="form-group mb-4">
+        <label for="deliveryMethod" class="h5">Способ получения:</label>
+        <select asp-for="DeliveryMethod" class="form-control" id="deliveryMethod">
+            <option value="Самовывоз">Самовывоз</option>
+            <option value="Доставка">Доставка</option>
+        </select>
+        <span asp-validation-for="DeliveryMethod" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-4" id="deliveryAddressGroup" style="display: none;">
+        <label for="deliveryAddress" class="h5">Адрес доставки:</label>
+        <input asp-for="DeliveryAddress" class="form-control" id="deliveryAddress" placeholder="Введите адрес доставки" />
+        <span asp-validation-for="DeliveryAddress" class="text-danger"></span>
+    </div>
+
+    <!-- Секция с товарами -->
+    @if (ViewBag.CartItems != null && ViewBag.CartItems.Count > 0)
+    {
+        <h4 class="mt-4">Товары в заказе:</h4>
+        <ul class="list-group mb-4">
+            @{
+                decimal total = 0;
+            }
+            @foreach (var item in ViewBag.CartItems)
+            {
+                var itemTotal = item.Price * item.Quantity;
+                total += itemTotal;
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>@item.Product.Name x @item.Quantity</span>
+                    <span class="badge bg-secondary">@itemTotal.ToString("C")</span>
+                </li>
+            }
+        </ul>
+
+        <div class="text-end mb-4">
+            <h5><strong>Итого: </strong> @total.ToString("C")</h5>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-warning">Корзина пуста.</div>
+    }
+
+    <div class="text-center">
+        <button type="submit" class="btn btn-success btn-lg" @(ViewBag.CartItems == null || ViewBag.CartItems.Count == 0 ? "disabled" : "")>
+            Подтвердить заказ
+        </button>
+    </div>
+    <a href="@ViewBag.PayUrl" target="_blank">Оплатить картой</a>
+</form>
+
+@section Scripts {
+    <script>
+        // Показывать/скрывать адрес доставки
+        document.getElementById('deliveryMethod').addEventListener('change', function () {
+            const addressGroup = document.getElementById('deliveryAddressGroup');
+            addressGroup.style.display = this.value === 'Доставка' ? 'block' : 'none';
+        });
+
+        // Инициализация при загрузке страницы
+        document.addEventListener('DOMContentLoaded', function () {
+            const deliveryMethod = document.getElementById('deliveryMethod');
+            if (deliveryMethod.value === 'Доставка') {
+                document.getElementById('deliveryAddressGroup').style.display = 'block';
+            }
+        });
+    </script>
+}

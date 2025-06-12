@@ -1,0 +1,227 @@
+﻿@model Product
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<style>
+    .star-rating {
+        direction: rtl;
+        display: inline-flex;
+    }
+
+        .star-rating input[type="radio"] {
+            display: none;
+        }
+
+        .star-rating label {
+            font-size: 2rem;
+            color: #ddd;
+            cursor: pointer;
+            padding: 0 0.1rem;
+        }
+
+            .star-rating label:hover,
+            .star-rating label:hover ~ label,
+            .star-rating input[type="radio"]:checked ~ label {
+                color: #ffc107;
+            }
+</style>
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Левая колонка: изображение -->
+        <div class="col-md-6">
+            <img src="@Model.ImageUrl"
+                 class="img-fluid rounded-3 shadow mb-4"
+                 alt="@Model.Name"
+                 onerror="this.src='/images/placeholder.jpg'">
+        </div>
+
+        <!-- Правая колонка: название, цена, описание, детали, корзина -->
+        <div class="col-md-6">
+            <h1>@Model.Name</h1>
+            <div class="fs-3 text-danger mb-4">
+                @Model.Price.ToString("N0") руб.
+            </div>
+            <p class="lead">@Model.Description</p>
+
+            @if (Model.ProductDetails.Any())
+            {
+                <div class="card mb-4">
+                    <div class="card-header">Характеристики</div>
+                    <div class="card-body">
+                        <dl class="row">
+                            @foreach (var detail in Model.ProductDetails)
+                            {
+                                <dt class="col-sm-4">@detail.AttributeName</dt>
+                                <dd class="col-sm-8">@detail.AttributeValue</dd>
+                            }
+                        </dl>
+                    </div>
+                </div>
+            }
+
+            <form asp-controller="Cart" asp-action="Add" method="post" class="mt-4">
+                <input type="hidden" name="productId" value="@Model.Id" />
+                <div class="input-group" style="max-width: 300px;">
+                    <input type="number"
+                           name="quantity"
+                           value="1"
+                           min="1"
+                           class="form-control">
+                    <button type="submit" class="btn btn-success">
+                        <i class="bi bi-cart-plus"></i> В корзину
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Отзывы в конце страницы -->
+    <div class="mt-5">
+        <h3>Отзывы покупателей</h3>
+
+        @if (Model.Review.Any())
+        {
+            <div class="d-flex align-items-center mb-4">
+                <h4 class="me-3">
+                    Средняя оценка: @Model.Review.Average(r => r.Rating).ToString("0.0")/5
+                </h4>
+                <div class="text-warning fs-4">
+                    @{
+                        int avgRating = (int)Math.Round(Model.Review.Average(r => r.Rating));
+                    }
+                    @for (int i = 0; i < avgRating; i++)
+                    {
+                        <i class="bi bi-star-fill"></i>
+                    }
+                </div>
+            </div>
+        }
+        else
+        {
+            <p>Пока нет отзывов. Будьте первым!</p>
+        }
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Оставить отзыв</h5>
+                    <form asp-controller="Product" asp-action="AddReview" method="post" id="reviewForm">
+                        <input type="hidden" name="productId" value="@Model.Id" />
+                        <div class="mb-3">
+                            <label class="form-label">Оценка <span class="text-danger">*</span></label>
+                            <div class="star-rating" id="starRating">
+                                <input type="radio" id="star5" name="rating" value="5" required />
+                                <label for="star5"><i class="bi bi-star-fill"></i></label>
+                                <input type="radio" id="star4" name="rating" value="4" />
+                                <label for="star4"><i class="bi bi-star-fill"></i></label>
+                                <input type="radio" id="star3" name="rating" value="3" />
+                                <label for="star3"><i class="bi bi-star-fill"></i></label>
+                                <input type="radio" id="star2" name="rating" value="2" />
+                                <label for="star2"><i class="bi bi-star-fill"></i></label>
+                                <input type="radio" id="star1" name="rating" value="1" />
+                                <label for="star1"><i class="bi bi-star-fill"></i></label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Комментарий</label>
+                            <textarea class="form-control"
+                                  name="comment"
+                                  rows="3"
+                                  maxlength="500"
+                                  placeholder="Ваш отзыв... (необязательно)"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitReviewBtn" disabled>
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info">
+                Для добавления отзыва необходимо
+                <a href="/Identity/Account/Login">войти</a>
+            </div>
+        }
+
+        <!-- Контейнер для отзывов -->
+        <div id="reviewsContainer">
+            @foreach (var review in Model.Review.OrderByDescending(r => r.CreatedDate).Take(5))
+            {
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <div>
+                                <h5 class="card-title mb-0">@review.UserName</h5>
+                                <small class="text-muted">
+                                    @review.CreatedDate.ToLocalTime().ToString("dd.MM.yyyy HH:mm")
+                                </small>
+                            </div>
+                            <div class="text-warning">
+                                @for (int i = 0; i < review.Rating; i++)
+                                {
+                                    <i class="bi bi-star-fill"></i>
+                                }
+                            </div>
+                        </div>
+                        <p class="card-text">@review.Comment</p>
+                    </div>
+                </div>
+            }
+        </div>
+        @if (Model.Review.Count > 5)
+        {
+            <button id="loadMoreReviews" class="btn btn-secondary mt-3" data-page="1" data-product-id="@Model.Id">
+                Загрузить ещё
+            </button>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const stars = document.querySelectorAll('#starRating input[name="rating"]');
+            const submitBtn = document.getElementById('submitReviewBtn');
+            const loadMoreBtn = document.getElementById('loadMoreReviews');
+
+            // Включение/выключение кнопки отправки отзыва
+            function toggleSubmit() {
+                submitBtn.disabled = !Array.from(stars).some(r => r.checked);
+            }
+
+            stars.forEach(radio => {
+                radio.addEventListener('change', toggleSubmit);
+            });
+            toggleSubmit();
+
+            // AJAX для догрузки отзывов
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function () {
+                    const page = parseInt(this.getAttribute('data-page')) + 1;
+                    const productId = this.getAttribute('data-product-id');
+
+                    fetch(`/Product/GetReviews?productId=${productId}&page=${page}`)
+                        .then(response => response.text())
+                        .then(data => {
+                            const reviewsContainer = document.getElementById('reviewsContainer');
+                            reviewsContainer.insertAdjacentHTML('beforeend', data);
+
+                            // Обновляем номер страницы
+                            loadMoreBtn.setAttribute('data-page', page);
+
+                            // Скрываем кнопку, если больше нет отзывов
+                            if (!data.trim()) {
+                                loadMoreBtn.remove();
+                            }
+                        })
+                        .catch(error => console.error('Ошибка загрузки отзывов:', error));
+                });
+            }
+        });
+    </script>
+}

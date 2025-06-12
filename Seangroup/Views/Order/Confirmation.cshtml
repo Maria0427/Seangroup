@@ -1,0 +1,39 @@
+﻿@model Seangroup.Models.Order
+@{
+    Layout = "_Layout";
+    var token = ViewBag.ConfirmationToken as string;
+    var returnUrl = ViewBag.ReturnUrl as string;
+}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Прием платежа с помощью виджета ЮKassa</title>
+
+  <!--Подключение библиотеки для инициализации виджета ЮKassa-->
+  <script src="https://yookassa.ru/checkout-widget/v1/checkout-widget.js"></script>
+ </head>
+ <body>
+.
+
+  <!--Контейнер, в котором будет отображаться платежная форма-->
+  <div id="payment-form"></div>
+
+  <script>
+  //Инициализация виджета. Все параметры обязательные.
+  const checkout = new window.YooMoneyCheckoutWidget({
+       confirmation_token: 'MTA4NjU0Nzp0ZXN0X2JwYmhEYkhVYm9HTzJSY2RXX0NnQ1gwMVdpN1RUc2xaVHBrTXdNd2JUVlEK', //Токен, который перед проведением оплаты нужно получить от ЮKassa
+      // return_url: 'https://localhost:7059/Order/Success', 
+
+     
+      error_callback: function(error) {
+          console.log(error)
+      }
+  });
+
+  checkout.render('payment-form');
+  </script>
+ </body>
+</html>
+

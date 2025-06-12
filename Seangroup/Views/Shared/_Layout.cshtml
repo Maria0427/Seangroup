@@ -1,0 +1,164 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Sean Group</title>
+
+    <!-- Предварительная загрузка стилей темы -->
+    <link rel="preload" href="~/css/site-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="~/css/site-theme.css"></noscript>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Стили для предотвращения мерцания -->
+    <style>
+        body:not(.theme-applied) {
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Скрипт мгновенного применения темы -->
+    <script>
+        // Применяем тему до отрисовки страницы
+        (function() {
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "dark") {
+                document.body.classList.add("dark-theme");
+            }
+            document.body.classList.add("theme-applied");
+        })();
+    </script>
+
+    <!-- Баннер куки -->
+    <div id="cookieConsent" style="
+        position: fixed; bottom: 0; left: 0; right: 0;
+        background-color: #222; color: #fff;
+        padding: 15px; text-align: center;
+        font-size: 14px; z-index: 1050; display: none;">
+        Этот сайт использует файлы cookie для улучшения работы.
+        <button id="acceptCookiesBtn" style="
+            background-color: #007bff; border: none;
+            color: white; padding: 5px 10px;
+            margin-left: 15px; cursor: pointer;
+            border-radius: 3px; font-weight: bold;">
+            Принять
+        </button>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <i class="bi bi-building"></i> Sean Group
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="gap: 15px;">
+                        <li class="nav-item"><a class="nav-link active" href="/Product">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Portfolio">Портфолио</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Contact">Контакты</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Services">Услуги</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/About">О нас</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-3">
+                        <partial name="_LoginPartial.cshtml" />
+                        <button id="toggle-theme" class="btn btn-outline-light" title="Сменить тему">🌙</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5 pt-4">
+        @RenderBody()
+    </main>
+
+    <footer class="bg-dark">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-8 col-md-7 text-light">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <h5 class="text-white mb-3">Контакты</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Новокузнецк, Кутузова, 14</li>
+                                <li class="mb-2"><i class="bi bi-phone me-2"></i>(3843) 920-900</li>
+                                <li><i class="bi bi-envelope me-2"></i>info@seangroup.ru</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <h5 class="text-white mb-3">Навигация</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="/About" class="text-light text-decoration-none transition">О компании</a></li>
+                                <li class="mb-2"><a href="/Services" class="text-light text-decoration-none transition">Услуги</a></li>
+                                <li><a href="/Portfolio" class="text-light text-decoration-none transition">Проекты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-top border-secondary">
+                        <p class="text-muted small mb-0">&copy; 2025 Sean Group. Все права защищены.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="map-wrapper h-100 rounded-3 overflow-hidden shadow-lg">
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=87.122474%2C53.751542&mode=search&oid=25209537590&ol=biz&z=16"
+                                class="h-100 w-100"
+                                style="border:0;"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипт куки и темы -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Показываем страницу после полной загрузки
+            document.body.style.visibility = "visible";
+            document.body.style.opacity = 1;
+
+            // Куки согласие
+            if (!localStorage.getItem('cookieConsentAccepted')) {
+                document.getElementById('cookieConsent').style.display = 'block';
+            }
+
+            document.getElementById('acceptCookiesBtn').addEventListener('click', function () {
+                localStorage.setItem('cookieConsentAccepted', 'true');
+                document.getElementById('cookieConsent').style.display = 'none';
+            });
+
+            // Темная тема
+            const themeToggle = document.getElementById("toggle-theme");
+
+            // Устанавливаем иконку на основе текущей темы
+            themeToggle.textContent = document.body.classList.contains("dark-theme")
+                ? "☀️"
+                : "🌙";
+
+            themeToggle.addEventListener("click", () => {
+                document.body.classList.toggle("dark-theme");
+                const newTheme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+                localStorage.setItem("theme", newTheme);
+                themeToggle.textContent = newTheme === "dark" ? "☀️" : "🌙";
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
