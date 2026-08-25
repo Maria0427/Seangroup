@@ -23,7 +23,7 @@ ORM: Entity Framework Core
 Фронтенд: HTML, CSS, JavaScript, Bootstrap
 Управление версиями: Git, GitHub
 
-Структура проекта
+Структура проекта:
 Проект построен по классической архитектуре MVC
 <img width="567" height="272" alt="image" src="https://github.com/user-attachments/assets/fed75229-acfd-4295-9b59-c1a1d3e0c9dc" />
 <img width="567" height="184" alt="image" src="https://github.com/user-attachments/assets/72e746dc-7fef-4de5-ba4c-6bf69ed3ca3f" />
